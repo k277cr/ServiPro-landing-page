@@ -11,11 +11,11 @@ export const companyInfo = {
   instagramUrl: 'https://instagram.com/tuempresa',
   messengerUrl: 'https://m.me/tuempresa',
   facebookUrl: 'https://facebook.com/tuempresa',
-  websiteUrl: 'https://f994222d-04cd-4169-a9d2-1fb8166d1adb-00-3rtctb62lhb9w.spock.replit.dev',
+  //websiteUrl: 'https://f994222d-04cd-4169-a9d2-1fb8166d1adb-00-3rtctb62lhb9w.spock.replit.dev',
   web: 'www.ServiPro.cr',
   locationLabel: 'Costa Rica',
   address: 'Dirección exacta de tu empresa o punto de atención',
-  mapsUrl: 'https://maps.google.com',
+  //mapsUrl: 'https://maps.google.com',
   pricingBanner: '3 meses de prueba gratis en todos los planes · Sin tarjeta de crédito',
   gallery: [
     {
