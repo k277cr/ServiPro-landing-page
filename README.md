@@ -1,319 +1,240 @@
-# Landing Page profesional para empresa
+# ServiPro Landing Page
 
-Este proyecto es una **landing page profesional en React + JavaScript + CSS** pensada para promocionar:
+Landing page hecha con **React + Vite** para presentar la plataforma **ServiPro**.  
+Está preparada para ejecutarse en local y para desplegarse en **Cloudflare Pages** usando un repositorio de **GitHub**.
 
-- locales
-- negocios
-- servicios
-- emprendimientos
-- empresas en general
+## Qué incluye
 
-La página incluye:
+- Hero principal con propuesta de valor
+- Navbar y navegación por secciones
+- Sección de servicios
+- Sección de precios
+- Galería
+- Sección de videos demostrativos
+- Botones flotantes para contacto
+- Footer
+- Diseño responsive
 
-- sección principal llamativa
-- información de la empresa
-- servicios ofrecidos
-- galería de imágenes
-- correo, teléfono y ubicación
-- botones de contacto directo
-- acceso rápido a **WhatsApp** con mensaje predefinido
-- enlaces a **Instagram** y **Messenger**
-- diseño responsive para celular, tablet y computadora
+## Stack usado
 
----
-
-## Importante sobre MySQL
-
-Esta landing page **no utiliza MySQL**, porque es una página de presentación visual y no necesita base de datos para funcionar.
-
-Se puede abrir y ejecutar en:
-
-- **VS Code**
-- **Visual Studio**
-- cualquier editor de código
-- cualquier hosting que soporte páginas estáticas o React
-
-Si después quieres agregar:
-
-- formulario conectado a base de datos
-- panel de administración
-- registro de clientes
-- almacenamiento de mensajes
-
-entonces sí se puede integrar más adelante con:
-
-- MySQL
-- PHP
-- Node.js + Express
-- Java + Spring Boot
-
----
-
-## Tecnologías utilizadas
-
-- **React**
-- **JavaScript**
-- **CSS**
-- **Vite**
-- **React Icons**
-
----
+- React 18
+- Vite 5
+- CSS
+- Framer Motion
+- React Icons
+- Lucide React
+- Phosphor Icons
 
 ## Estructura del proyecto
 
-```bash
-landing-page-empresa/
-│
+```text
+ServiPro-landing-page/
 ├── public/
 │   └── images/
-│
 ├── src/
 │   ├── components/
-│   │   ├── About.jsx
 │   │   ├── Contact.jsx
 │   │   ├── FloatingSocials.jsx
 │   │   ├── Footer.jsx
 │   │   ├── Gallery.jsx
 │   │   ├── Hero.jsx
 │   │   ├── Navbar.jsx
-│   │   └── Services.jsx
-│   │
+│   │   ├── Pricing.jsx
+│   │   ├── Services.jsx
+│   │   └── Videos.jsx
 │   ├── data/
 │   │   └── company.js
-│   │
 │   ├── styles/
-│   │   └── global.css
-│   │
+│   │   ├── global.css
+│   │   └── global-white.css
 │   ├── App.jsx
 │   └── main.jsx
-│
 ├── .gitignore
+├── .node-version
+├── .npmrc
 ├── index.html
 ├── package.json
-└── README.md
+├── package-lock.json
+└── vite.config.js
 ```
 
----
+## Requisitos
 
-## Cómo abrir el proyecto
+- Node.js 20
+- npm 10 o superior
 
-### 1) Descomprimir el archivo ZIP
-Primero descomprime el archivo.
+Este proyecto trae dos archivos pensados para evitar problemas al desplegar:
 
-### 2) Abrir la carpeta en VS Code
-Abre la carpeta `landing-page-empresa` en Visual Studio Code.
+- **.node-version**: fija Node 20
+- **.npmrc**: usa el registro público de npm
 
-### 3) Instalar dependencias
-Abre la terminal dentro del proyecto y ejecuta:
+## Instalación local
+
+Abre la carpeta del proyecto y ejecuta:
 
 ```bash
 npm install
 ```
 
-### 4) Ejecutar el proyecto
-Luego ejecuta:
+## Ejecutar en desarrollo
 
 ```bash
 npm run dev
 ```
 
-### 5) Abrir en el navegador
-Vite te mostrará una URL parecida a esta:
+Vite te mostrará una URL parecida a:
 
-```bash
-http://localhost:5173/
+```text
+http://localhost:5173
 ```
 
-Abre esa dirección en tu navegador.
-
----
-
-## Cómo cambiar los datos de tu empresa
-
-Debes editar este archivo:
-
-```bash
-src/data/company.js
-```
-
-Ahí encontrarás datos como estos:
-
-- nombre de la empresa
-- eslogan
-- descripción
-- correo
-- teléfono
-- número de WhatsApp
-- mensaje automático de WhatsApp
-- Instagram
-- Messenger
-- Facebook
-- dirección
-- ubicación
-- enlace de Google Maps
-- imágenes de galería
-
----
-
-## Cómo funciona el botón de WhatsApp
-
-En el archivo `src/data/company.js` existe esta configuración:
-
-```js
-whatsappNumber: '50688888888',
-whatsappMessage: 'Necesito información de la empresa',
-```
-
-Cuando el usuario da clic en el botón de WhatsApp, se abre un enlace así:
-
-```js
-https://wa.me/TUNUMERO?text=MENSAJE
-```
-
-Ejemplo:
-
-```js
-https://wa.me/50688888888?text=Necesito%20informaci%C3%B3n%20de%20la%20empresa
-```
-
-### Recomendaciones
-
-- no pongas el signo `+`
-- no pongas espacios
-- usa el código del país, por ejemplo `506`
-
-Correcto:
-
-```js
-50688888888
-```
-
-Incorrecto:
-
-```js
-+506 8888-8888
-```
-
----
-
-## Cómo cambiar Instagram y Messenger
-
-También en `src/data/company.js` encontrarás:
-
-```js
-instagramUrl: 'https://instagram.com/tuempresa',
-messengerUrl: 'https://m.me/tuempresa',
-```
-
-Solo reemplaza `tuempresa` por el usuario o enlace real de tu negocio.
-
----
-
-## Cómo cambiar las imágenes
-
-Actualmente el proyecto usa imágenes de ejemplo en línea.
-
-Puedes cambiarlas de dos formas:
-
-### Opción 1: usar nuevas URLs
-Modifica el arreglo `gallery` dentro de `src/data/company.js`.
-
-### Opción 2: usar imágenes locales
-Guarda tus imágenes dentro de:
-
-```bash
-public/images/
-```
-
-Y luego cambia las rutas así:
-
-```js
-image: '/images/foto1.jpg'
-```
-
-Ejemplo:
-
-```js
-gallery: [
-  {
-    title: 'Mi local',
-    image: '/images/local1.jpg'
-  },
-  {
-    title: 'Mi servicio',
-    image: '/images/servicio1.jpg'
-  }
-]
-```
-
----
-
-## Cómo personalizar colores y estilos
-
-Si quieres cambiar:
-
-- colores
-- tamaños
-- botones
-- fondos
-- sombras
-- responsive
-
-puedes editar el archivo:
-
-```bash
-src/styles/global.css
-```
-
----
-
-## Cómo generar la versión final para subir a internet
-
-Cuando ya todo esté listo, ejecuta:
+## Generar build de producción
 
 ```bash
 npm run build
 ```
 
-Eso generará una carpeta llamada `dist/` con los archivos optimizados para producción.
+Eso crea la carpeta:
 
-Luego puedes subir esa carpeta a plataformas como:
+```text
+dist/
+```
 
-- Netlify
-- Vercel
-- Hostinger
-- cPanel
-- GitHub Pages
+## Probar el build localmente
 
----
+```bash
+npm run preview
+```
 
-## Ideas para mejorarla más adelante
+## Configuración editable
 
-Si luego quieres hacerla todavía más profesional, puedes agregar:
+La mayoría del contenido editable está en:
 
-- formulario de contacto funcional
-- mapa incrustado de Google Maps
-- testimonios de clientes
-- sección de preguntas frecuentes
-- animaciones avanzadas
-- conexión a backend
-- panel administrador
-- guardado de contactos en base de datos
+```text
+src/data/company.js
+```
 
----
+Ahí puedes cambiar:
 
-## Resumen
+- nombre del proyecto
+- descripción
+- correo
+- teléfono
+- WhatsApp
+- enlaces de redes sociales
+- texto comercial
+- lista de servicios
+- planes y precios
+- imágenes de galería
+- videos
 
-Este proyecto ya te deja una base profesional para:
+## Notas importantes sobre archivos
 
-- mostrar tu empresa
-- promocionar tus locales y servicios
-- facilitar el contacto con clientes
-- dirigir usuarios a WhatsApp, Instagram y Messenger
-- transmitir una imagen más seria y profesional
+### No subir estas carpetas al repositorio
 
----
+No deben ir a GitHub:
 
-## Autor
+- `node_modules/`
+- `dist/`
 
-Proyecto preparado para que puedas editarlo fácilmente según los datos reales de tu empresa.
+Por eso están ignoradas en `.gitignore`.
+
+### Qué sí debe ir a GitHub
+
+Sí deben ir al repositorio:
+
+- `src/`
+- `public/`
+- `index.html`
+- `package.json`
+- `package-lock.json`
+- `vite.config.js`
+- `.node-version`
+- `.npmrc`
+
+## Despliegue en Cloudflare Pages
+
+Usa el proyecto como **Pages**, no como **Worker**.
+
+### Configuración recomendada en Cloudflare Pages
+
+- **Production branch:** `main`
+- **Framework preset:** `None` o `Vite` si aparece
+- **Build command:** `npm install && npm run build`
+- **Build output directory:** `dist`
+- **Root directory:** `/`
+
+### Variables recomendadas
+
+- `NODE_VERSION = 20`
+- `SKIP_DEPENDENCY_INSTALL = true`
+
+> `SKIP_DEPENDENCY_INSTALL=true` se recomienda si Cloudflare falla con la instalación automática y quieres controlar tú el `npm install` desde el build command.
+
+## Flujo recomendado con GitHub
+
+### Rama principal
+- `main` = producción
+
+### Rama de trabajo
+- `desarrollo` = cambios y pruebas
+
+### Flujo sugerido
+1. Trabajas en `desarrollo`
+2. Haces commit y push
+3. Revisas los cambios
+4. Haces merge a `main`
+5. Cloudflare publica automáticamente lo que esté en `main`
+
+## Comandos Git útiles
+
+Crear rama de desarrollo:
+
+```bash
+git checkout -b desarrollo
+```
+
+Cambiar a desarrollo:
+
+```bash
+git checkout desarrollo
+```
+
+Guardar cambios:
+
+```bash
+git add .
+git commit -m "Actualizar landing"
+git push origin desarrollo
+```
+
+Merge a main:
+
+```bash
+git checkout main
+git pull origin main
+git merge desarrollo
+git push origin main
+```
+
+## Problema corregido en esta versión
+
+Se corrigió el problema de instalación en Cloudflare que venía provocado por un `package-lock.json` con referencias de registro no adecuadas para despliegue externo.
+
+Además se dejó el proyecto limpio para despliegue:
+
+- sin `.git/`
+- sin `node_modules/`
+- sin `dist/`
+- con `package-lock.json` regenerado
+- con `.node-version`
+- con `.npmrc`
+
+## Observaciones
+
+Durante el build de Vite pueden aparecer advertencias de `framer-motion` relacionadas con `use client`.  
+En este proyecto esas advertencias no impiden compilar ni generar `dist`.
+
+## Licencia
+
+Uso educativo / proyecto personalizado para ServiPro.
