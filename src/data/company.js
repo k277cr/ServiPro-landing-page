@@ -1,8 +1,8 @@
 export const companyInfo = {
   name: 'ServiPro',
   slogan: 'ServiPro',
-  description:
-    'ServiPro es una plataforma digital que conecta personas con empresas, emprendedores y profesionales que ofrecen distintos servicios. Nuestro marketplace permite a los usuarios encontrar opciones confiables de manera rápida y sencilla, mientras que los negocios pueden dar a conocer sus servicios, aumentar su visibilidad y llegar a nuevos clientes. En ServiPro trabajamos para crear un espacio moderno, práctico y seguro donde conectar la oferta con la demanda sea más fácil para todos.',
+  /*description:
+    'ServiPro es una plataforma digital que conecta personas con empresas, emprendedores y profesionales que ofrecen distintos servicios. Nuestro marketplace permite a los usuarios encontrar opciones confiables de manera rápida y sencilla, mientras que los negocios pueden dar a conocer sus servicios, aumentar su visibilidad y llegar a nuevos clientes. En ServiPro trabajamos para crear un espacio moderno, práctico y seguro donde conectar la oferta con la demanda sea más fácil para todos.',*/
   email: 'contacto@tuempresa.com',
   phone: '+506 8888-8888',
   whatsappNumber: '50688888888',
@@ -196,3 +196,4 @@ export const pricingHighlights = [
   'Factura electrónica disponible',
   'Soporte por WhatsApp'
 ];
+
