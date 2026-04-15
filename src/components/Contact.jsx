@@ -46,8 +46,15 @@ function Contact() {
             <a href={companyInfo.websiteUrl} target="_blank" rel="noreferrer" className="contact-item">
               <FaMapMarkerAlt />
               <div>
-                <strong>Web</strong>
-                <span>{companyInfo.web}</span>
+                <strong>                
+                <a href='#contacto'>
+                Marketplace de servicios
+                <span >{/*{companyInfo.web}*/} www.serviprocr.com</span>
+                </a>
+                </strong>
+
+                
+                
               </div>
             </a>
           </div>
@@ -76,17 +83,6 @@ function Contact() {
               <FaInstagram />
               Instagram
             </a>
-
-            <a
-              href={companyInfo.messengerUrl}
-              target="_blank"
-              rel="noreferrer"
-              className="btn btn--full contact-btn contact-btn--messenger"
-            >
-              <FaFacebookMessenger />
-              Messenger
-            </a>
-
             <a
               href={companyInfo.facebookUrl}
               target="_blank"

@@ -16,6 +16,7 @@ function Footer() {
             <a href="#videos">Videos</a>
             <a href="#servicios">Servicios</a>
             <a href="#contacto">Contacto</a>
+            <a href= {companyInfo.paginaPlantillas}>Plantillas de sitios web</a>
             <a
               href={companyInfo.websiteUrl}
               target="_blank"
