@@ -21,14 +21,12 @@ function Navbar() {
         <nav className="nav">
           <a href="#videos">Videos</a>
           <a href="#servicios">Servicios</a>
-          <a href="#planes">Planes</a>
           <a href="#galeria">Galería</a>
           <a href="#contacto">Contacto</a>
         </nav>
 
-        <a href={whatsappHref} target="_blank" rel="noreferrer" className="btn btn--light btn--sm">
-          <FaWhatsapp />
-          Escríbenos
+        <a href={companyInfo.paginaPlantillas}target="_blank" rel="noreferrer" className="btn btn--light btn--sm">
+          Plantillas de sitios web
         </a>
       </div>
     </header>
