@@ -7,9 +7,9 @@ function Gallery() {
       <div className="container">
         <div className="section__header section__header--center">
           <p className="section__eyebrow">Galería</p>
-          <h2 className="section__title">Imágenes que refuerzan la confianza en tu marca</h2>
+          {/*<h2 className="section__title">Imágenes que refuerzan la confianza en tu marca</h2>*/}
           <p className="section__text">
-            Puedes reemplazar estas imágenes por fotos reales de tu otra página, tu local, tus servicios o tu equipo.
+            {/*Puedes reemplazar estas imágenes por fotos reales de tu otra página, tu local, tus servicios o tu equipo.*/}
           </p>
         </div>
 
