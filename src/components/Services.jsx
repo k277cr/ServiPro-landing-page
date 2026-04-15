@@ -4,7 +4,6 @@ import {
   CalendarCheck,
   ShieldCheck,
   ChartBar,
-  Palette,
   Storefront,
   Buildings,
   CreditCard,
@@ -21,7 +20,6 @@ const iconMap = {
   calendar: CalendarCheck,
   shield: ShieldCheck,
   barChart: ChartBar,
-  palette: Palette,
   search: Storefront,
   building: Buildings,
   creditCard: CreditCard,
@@ -31,6 +29,21 @@ const iconMap = {
   users: UsersThree,
   bell: BellRinging,
   fileText: FirstAidKit
+};
+
+const iconColorMap = {
+  calendar: 'service-card__icon--reservas',
+  shield: 'service-card__icon--accesos',
+  barChart: 'service-card__icon--estadisticas',
+  search: 'service-card__icon--marketplace',
+  building: 'service-card__icon--sedes',
+  creditCard: 'service-card__icon--cobros',
+  smartphone: 'service-card__icon--app',
+  image: 'service-card__icon--redes',
+  clock: 'service-card__icon--horario',
+  users: 'service-card__icon--clientes',
+  bell: 'service-card__icon--avisos',
+  fileText: 'service-card__icon--clinica'
 };
 
 function Services() {
@@ -54,6 +67,7 @@ function Services() {
         <div className="service-grid">
           {services.map((service, index) => {
             const Icon = iconMap[service.icon];
+            const iconVariant = iconColorMap[service.icon] || 'service-card__icon--default';
 
             return (
               <motion.article
@@ -68,7 +82,7 @@ function Services() {
                 <div className="service-card__head">
                   <div className="service-card__heading">
                     <motion.div
-                      className="service-card__icon"
+                      className={`service-card__icon ${iconVariant}`}
                       whileHover={{ scale: 1.08 }}
                       transition={{ type: 'spring', stiffness: 280, damping: 18 }}
                     >
@@ -78,9 +92,7 @@ function Services() {
                     <h3>{service.title}</h3>
                   </div>
 
-                  <span className="service-card__number">
-                    
-                  </span>
+                  <span className="service-card__number"></span>
                 </div>
 
                 <p>{service.description}</p>

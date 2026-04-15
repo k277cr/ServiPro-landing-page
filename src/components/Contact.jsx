@@ -19,11 +19,12 @@ function Contact() {
     <section className="section section--soft" id="contacto">
       <div className="container contact__grid">
         <div>
+          
           <p className="section__eyebrow">Contáctanos</p>
-          <h2 className="section__title">Tus clientes pueden encontrarte rápido</h2>
-          <p className="section__text">
-            Agrega aquí tu correo, tu número, tu ubicación y tus redes sociales para facilitar el contacto directo.
-          </p>
+          
+          
+          
+
 
           <div className="contact-list">
             <a href={`mailto:${companyInfo.email}`} className="contact-item">
@@ -54,46 +55,47 @@ function Contact() {
 
         <aside className="contact-card">
           <h3>Accesos directos</h3>
-          <p>Haz que el cliente te escriba con un solo clic desde la landing page.</p>
 
           <div className="contact-card__buttons">
-            <a href={whatsappHref} target="_blank" rel="noreferrer" className="btn btn--primary btn--full">
+            <a
+              href={whatsappHref}
+              target="_blank"
+              rel="noreferrer"
+              className="btn btn--full contact-btn contact-btn--whatsapp"
+            >
               <FaWhatsapp />
               WhatsApp
             </a>
+
             <a
               href={companyInfo.instagramUrl}
               target="_blank"
               rel="noreferrer"
-              className="btn btn--outline btn--full"
+              className="btn btn--full contact-btn contact-btn--instagram"
             >
               <FaInstagram />
               Instagram
             </a>
+
             <a
               href={companyInfo.messengerUrl}
               target="_blank"
               rel="noreferrer"
-              className="btn btn--outline btn--full"
+              className="btn btn--full contact-btn contact-btn--messenger"
             >
               <FaFacebookMessenger />
               Messenger
             </a>
 
             <a
-              className="btn btn--outline btn--full"
               href={companyInfo.facebookUrl}
               target="_blank"
               rel="noreferrer"
+              className="btn btn--full contact-btn contact-btn--facebook"
             >
               <FaFacebook />
               Facebook
             </a>
-          </div>
-
-          <div className="contact-card__note">
-            <strong>Ubicación:</strong>
-            <span>{companyInfo.locationLabel}</span>
           </div>
         </aside>
       </div>

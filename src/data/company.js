@@ -1,18 +1,20 @@
 export const companyInfo = {
   name: 'ServiPro',
   slogan: 'ServiPro',
-  /*description:
-    'ServiPro es una plataforma digital que conecta personas con empresas, emprendedores y profesionales que ofrecen distintos servicios. Nuestro marketplace permite a los usuarios encontrar opciones confiables de manera rápida y sencilla, mientras que los negocios pueden dar a conocer sus servicios, aumentar su visibilidad y llegar a nuevos clientes. En ServiPro trabajamos para crear un espacio moderno, práctico y seguro donde conectar la oferta con la demanda sea más fácil para todos.',*/
-  email: 'contacto@tuempresa.com',
-  phone: '+506 8888-8888',
-  whatsappNumber: '50688888888',
+  description:
+    `ServiPro es un marketplace que conecta al cliente con servicios y 
+    negocios de manera rápida y sencilla. Los negocios tendran la facilidad de exponer sus servicios, 
+    aumentar su visibilidad y llegar a nuevos clientes. Las empresas que brinden servicios por horarios definidos tendran la oportunidad de automatizar su agenda`,
+  email: 'servipro@gmail.com',
+  phone: '+506 72827612',
+  whatsappNumber: '72827612',
   whatsappMessage: 'Necesito información de la empresa',
   facebookUrl: 'https://facebook.com/tu-pagina',
   instagramUrl: 'https://instagram.com/tuempresa',
   messengerUrl: 'https://m.me/tuempresa',
   facebookUrl: 'https://facebook.com/tuempresa',
   //websiteUrl: 'https://f994222d-04cd-4169-a9d2-1fb8166d1adb-00-3rtctb62lhb9w.spock.replit.dev',
-  web: 'www.ServiPro.cr',
+  web: 'www.ServiPro.com',
   locationLabel: 'Costa Rica',
   address: 'Dirección exacta de tu empresa o punto de atención',
   //mapsUrl: 'https://maps.google.com',
