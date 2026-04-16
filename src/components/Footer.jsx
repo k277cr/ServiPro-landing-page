@@ -1,7 +1,10 @@
 import React from 'react';
 import { companyInfo } from '../data/company';
+import { legalLinks } from '../data/legal';
 
 function Footer() {
+  const basePath = typeof window !== 'undefined' ? window.location.pathname || '/' : '/';
+
   return (
     <footer className="footer">
       <div className="container">
@@ -11,20 +14,34 @@ function Footer() {
             <p>{companyInfo.locationLabel}</p>
           </div>
 
-          <div className="footer__links">
-            <a href="#inicio">Inicio</a>
-            <a href="#videos">Videos</a>
-            <a href="#servicios">Servicios</a>
-            <a href="#contacto">Contacto</a>
-            <a href= {companyInfo.paginaPlantillas}>Plantillas de sitios web</a>
-            <a
-              href={companyInfo.websiteUrl}
-              target="_blank"
-              rel="noreferrer"
-              className="footer__website-link"
-            >
-              Visita nuestra página web ServiPro
-            </a>
+          <div className="footer__nav-group">
+            <div className="footer__links">
+              <a href="#inicio">Inicio</a>
+              <a href="#videos">Videos</a>
+              <a href="#servicios">Servicios</a>
+              <a href="#contacto">Contacto</a>
+              <a href={companyInfo.paginaPlantillas}>Plantillas de sitios web</a>
+              <a
+                href={companyInfo.websiteUrl}
+                target="_blank"
+                rel="noreferrer"
+                className="footer__website-link"
+              >
+                Visita nuestra página web ServiPro
+              </a>
+            </div>
+
+            <div className="footer__legal">
+              <span className="footer__legal-label">Información legal</span>
+
+              <div className="footer__legal-links">
+                {legalLinks.map((link) => (
+                  <a key={link.key} href={`${basePath}?legal=${link.key}`}>
+                    {link.label}
+                  </a>
+                ))}
+              </div>
+            </div>
           </div>
         </div>
 
