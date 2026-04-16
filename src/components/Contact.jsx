@@ -47,9 +47,9 @@ function Contact() {
               <FaMapMarkerAlt />
               <div>
                 <strong>                
-                <a href='#contacto'>
-                Marketplace de servicios
-                <span >{/*{companyInfo.web}*/} www.serviprocr.com</span>
+                <a href={companyInfo.mapsUrl}>
+                Ubicacion
+                <span >{companyInfo.address}</span>
                 </a>
                 </strong>
 

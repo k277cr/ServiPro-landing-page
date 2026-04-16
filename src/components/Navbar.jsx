@@ -36,7 +36,7 @@ function Navbar() {
           <span className="brand__logo">LP</span>
           <div>
             <h1>{companyInfo.name}</h1>
-            <p>Conectamos servicios, impulsamos negocios.</p>
+            <p>ServiPro es una marca operada por Corporacion LA S.R.L</p>
           </div>
         </a>
 
