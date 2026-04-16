@@ -5,19 +5,18 @@ export const companyInfo = {
     `ServiPro es un marketplace que conecta al cliente con servicios y 
     negocios de manera rápida y sencilla. Los negocios tendran la facilidad de exponer sus servicios, 
     aumentar su visibilidad y llegar a nuevos clientes. Las empresas que brinden servicios por horarios definidos tendran la oportunidad de automatizar su agenda`,
-  email: 'servipro@gmail.com',
+  email: 'hola@serviprocr.com',
   phone: '+506 72827612',
   whatsappNumber: '72827612',
   whatsappMessage: 'Necesito información de la empresa',
-  facebookUrl: 'https://facebook.com/servipro',
   instagramUrl: 'https://instagram.com/serviprocr',
-  facebookUrl: 'https://facebook.com/servipro',
+  facebookUrl: 'https://www.facebook.com/profile.php?id=61570988849996',
   paginaPlantillas: 'https://plantillas.serviprocr.com',
   //websiteUrl: 'https://f994222d-04cd-4169-a9d2-1fb8166d1adb-00-3rtctb62lhb9w.spock.replit.dev',
   web: 'https://serviprocr.com',
   locationLabel: 'Costa Rica',
-  address: 'Dirección exacta de tu empresa o punto de atención',
-  //mapsUrl: 'https://maps.google.com',
+  address: 'Cartago, Turrialba, Costa Rica, De la Escuela de las Americas, 50 metros hacia el noroeste, en calle 6, contiguo al salon de belleza Estilo Actual, 30101 Turrialba',
+  mapsUrl: 'https://maps.app.goo.gl/GvbEYxXWssUGoQ827',
   pricingBanner: '3 meses de prueba gratis en todos los planes · Sin tarjeta de crédito',
   gallery: [
     {
