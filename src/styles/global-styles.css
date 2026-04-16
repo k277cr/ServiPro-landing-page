@@ -1243,6 +1243,11 @@ a {
   box-shadow: var(--shadow-soft);
 }
 
+.legal-page__card--sticky {
+  display: grid;
+  gap: 0.95rem;
+}
+
 .legal-page__card-label {
   margin: 0 0 0.95rem;
   color: #111111;
@@ -1259,6 +1264,10 @@ a {
 .legal-page__toc {
   display: grid;
   gap: 0.8rem;
+}
+
+.legal-page__toc--desktop {
+  min-height: 0;
 }
 
 .legal-page__toc-link {
@@ -1371,6 +1380,48 @@ a {
   color: #111111;
   font-weight: 700;
   box-shadow: var(--shadow-soft);
+}
+
+@media (min-width: 769px) {
+  .legal-page__sidebar {
+    align-self: start;
+    min-height: 0;
+  }
+
+  .legal-page__card--sticky {
+    grid-template-rows: auto auto 1fr;
+    max-height: calc(100vh - 2rem);
+    overflow: hidden;
+  }
+
+  .legal-page__toc--desktop {
+    max-height: 100%;
+    overflow-y: auto;
+    overscroll-behavior: contain;
+    padding-right: 0.3rem;
+    scrollbar-width: thin;
+    scrollbar-color: rgba(0, 0, 0, 0.22) transparent;
+  }
+
+  .legal-page__toc--desktop::-webkit-scrollbar {
+    width: 8px;
+  }
+
+  .legal-page__toc--desktop::-webkit-scrollbar-track {
+    background: transparent;
+  }
+
+  .legal-page__toc--desktop::-webkit-scrollbar-thumb {
+    background: rgba(0, 0, 0, 0.16);
+    border-radius: 999px;
+    border: 2px solid transparent;
+    background-clip: padding-box;
+  }
+
+  .legal-page__toc--desktop::-webkit-scrollbar-thumb:hover {
+    background: rgba(0, 0, 0, 0.24);
+    background-clip: padding-box;
+  }
 }
 
 @media (max-width: 768px) {
