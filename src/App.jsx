@@ -1,6 +1,8 @@
 import React from 'react';
 import Navbar from './components/Navbar';
+import InstitutionalBar from './components/InstitutionalBar';
 import Hero from './components/Hero';
+import LegalInfo from './components/LegalInfo';
 import Videos from './components/Videos';
 import Services from './components/Services';
 import Gallery from './components/Gallery';
@@ -29,7 +31,9 @@ function App() {
   return (
     <>
       <Navbar />
+      <InstitutionalBar />
       <Hero />
+      <LegalInfo />
       <Videos />
       <Services />
       <Gallery />

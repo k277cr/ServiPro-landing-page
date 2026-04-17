@@ -1,3 +1,8 @@
+const operatorCompany = 'CORPORACIÓN LA SOCIEDAD DE RESPONSABILIDAD LIMITADA';
+const operatorCountry = 'Costa Rica';
+const legalIdentifier = '3-102-933911';
+const legalLocation = 'Cartago, Turrialba, Costa Rica';
+
 export const companyInfo = {
   name: 'ServiPro',
   slogan: 'ServiPro',
@@ -12,9 +17,20 @@ export const companyInfo = {
   instagramUrl: 'https://instagram.com/serviprocr',
   facebookUrl: 'https://www.facebook.com/profile.php?id=61570988849996',
   paginaPlantillas: 'https://plantillas.serviprocr.com',
-  //websiteUrl: 'https://f994222d-04cd-4169-a9d2-1fb8166d1adb-00-3rtctb62lhb9w.spock.replit.dev',
+  websiteUrl: 'https://serviprocr.com',
   web: 'https://serviprocr.com',
-  locationLabel: 'Costa Rica',
+  operatorCompany,
+  operatorCountry,
+  legalIdentifier,
+  legalLocation,
+  navbarInstitutionalText: `Operado por ${operatorCompany}`,
+  topBarInstitutionalText: `ServiPro es una marca operada por ${operatorCompany}`,
+  institutionalHeroLine: `Operado por ${operatorCompany} · ${operatorCountry}`,
+  institutionalStatement:
+    `ServiPro es una marca comercial operada por ${operatorCompany}, empresa responsable de su gestión, desarrollo y operación en ${operatorCountry}.`,
+  footerInstitutionalText: `ServiPro es una marca operada por ${operatorCompany} en ${operatorCountry}.`,
+  footerBottomOperatorText: `Operado por ${operatorCompany}`,
+  locationLabel: operatorCountry,
   address: 'Cartago, Turrialba, Costa Rica, De la Escuela de las Americas, 50 metros hacia el noroeste, en calle 6, contiguo al salon de belleza Estilo Actual, 30101 Turrialba',
   mapsUrl: 'https://maps.app.goo.gl/GvbEYxXWssUGoQ827',
   pricingBanner: '3 meses de prueba gratis en todos los planes · Sin tarjeta de crédito',
@@ -197,4 +213,3 @@ export const pricingHighlights = [
   'Factura electrónica disponible',
   'Soporte por WhatsApp'
 ];
-

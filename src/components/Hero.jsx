@@ -8,9 +8,14 @@ function Hero() {
       <div className="container">
         <div className="hero__grid">
           <div className="hero__text">
-            <span className="badge">Marketplace profesional</span>
+            <span className="hero__institutional-eyebrow">{companyInfo.institutionalHeroLine}</span>
             <h2>{companyInfo.name}</h2>
             <p>{companyInfo.description}</p>
+
+            <div className="hero__institutional-card">
+              <span className="hero__institutional-label">Información institucional</span>
+              <p>{companyInfo.institutionalStatement}</p>
+            </div>
 
             <div className="hero__actions">
               <a

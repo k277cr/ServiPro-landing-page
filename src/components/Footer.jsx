@@ -9,9 +9,11 @@ function Footer() {
     <footer className="footer">
       <div className="container">
         <div className="footer__content">
-          <div>
+          <div className="footer__brand">
+            <span className="footer__brand-label">Información institucional</span>
             <h3>{companyInfo.name}</h3>
-            <p>{companyInfo.locationLabel}</p>
+            <p className="footer__brand-location">{companyInfo.locationLabel}</p>
+            <p className="footer__institutional-summary">{companyInfo.footerInstitutionalText}</p>
           </div>
 
           <div className="footer__nav-group">
@@ -45,16 +47,18 @@ function Footer() {
           </div>
         </div>
 
-
-          <div className="footer__love">
-            <span>
-              Para Costa Rica y por Costa Rica
-              <span className="footer__love-heart">♡</span>
-            </span>
-          </div>
+        <div className="footer__love">
+          <span>
+            Para Costa Rica y por Costa Rica
+            <span className="footer__love-heart">♡</span>
+          </span>
+        </div>
 
         <div className="footer__bottom">
-          <span>© {new Date().getFullYear()} {companyInfo.name}. Todos los derechos reservados.</span>
+          <span className="footer__bottom-operator">{companyInfo.footerBottomOperatorText}</span>
+          <span className="footer__bottom-copy">
+            © {new Date().getFullYear()} {companyInfo.name}. Todos los derechos reservados.
+          </span>
         </div>
 
       </div>

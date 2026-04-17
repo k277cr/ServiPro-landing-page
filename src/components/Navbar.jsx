@@ -34,9 +34,9 @@ function Navbar() {
       <div className="container navbar__content">
         <a href={companyInfo.websiteUrl} className="brand" onClick={closeMenu}>
           <span className="brand__logo">LP</span>
-          <div>
+          <div className="brand__text">
             <h1>{companyInfo.name}</h1>
-            <p>ServiPro es una marca operada por Corporacion LA S.R.L</p>
+            <p>{companyInfo.navbarInstitutionalText}</p>
           </div>
         </a>
 
