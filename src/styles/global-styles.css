@@ -166,6 +166,7 @@ a {
   display: inline-flex;
   align-items: center;
   gap: 0.9rem;
+  min-width: 0;
 }
 
 .brand__logo {
@@ -180,18 +181,52 @@ a {
   box-shadow: 0 14px 34px rgba(0, 0, 0, 0.12);
 }
 
+.brand__text {
+  display: grid;
+  gap: 0.18rem;
+  min-width: 0;
+  max-width: clamp(20rem, 34vw, 30rem);
+}
+
 .brand h1,
 .brand p {
   margin: 0;
 }
 
 .brand h1 {
-  font-size: 1rem;
+  font-size: 1.1rem;
+  line-height: 1.05;
 }
 
 .brand p {
+  color: rgba(17, 17, 17, 0.78);
+  max-width: 100%;
+  font-size: 0.84rem;
+  font-weight: 600;
+  line-height: 1.38;
+  text-wrap: pretty;
+}
+
+.institutional-bar {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+  background: linear-gradient(180deg, rgba(252, 252, 252, 0.98), rgba(246, 246, 246, 0.94));
+}
+
+.institutional-bar__content {
+  max-width: 60rem;
+  margin: 0 auto;
+  padding: 0.85rem 0;
   color: var(--muted);
-  font-size: 1rem;
+  text-align: center;
+  font-size: 0.95rem;
+  font-weight: 600;
+  line-height: 1.65;
+  text-wrap: pretty;
+}
+
+.institutional-bar__content strong {
+  color: #111111;
+  font-weight: 800;
 }
 
 .nav {
@@ -216,6 +251,19 @@ a {
   grid-template-columns: 1.05fr 0.95fr;
 }
 
+.hero__institutional-eyebrow {
+  display: inline-block;
+  max-width: 48rem;
+  padding-bottom: 0.7rem;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+  color: rgba(17, 17, 17, 0.78);
+  font-size: 0.95rem;
+  font-weight: 700;
+  letter-spacing: 0.01em;
+  line-height: 1.6;
+  text-wrap: balance;
+}
+
 .hero__text h2 {
   margin: 1rem 0;
   font-size: clamp(2.5rem, 5vw, 4.8rem);
@@ -228,6 +276,98 @@ a {
   line-height: 1.85;
   font-size: 1.06rem;
   max-width: 650px;
+}
+
+.hero__institutional-card {
+  display: grid;
+  gap: 0.55rem;
+  max-width: 720px;
+  margin-top: 1.45rem;
+  padding: 1rem 1.15rem;
+  border-radius: 22px;
+  border: 1px solid rgba(0, 0, 0, 0.06);
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.98), rgba(246, 246, 246, 0.92));
+  box-shadow: 0 18px 34px rgba(0, 0, 0, 0.05);
+}
+
+.hero__institutional-label {
+  color: #111111;
+  font-size: 0.76rem;
+  font-weight: 800;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.hero__institutional-card p {
+  margin: 0;
+  max-width: none;
+  color: var(--muted);
+  font-size: 0.97rem;
+  line-height: 1.75;
+  text-wrap: pretty;
+}
+
+.legal-info {
+  padding-top: 4rem;
+}
+
+.legal-info__panel {
+  padding: 2rem;
+  border-radius: 28px;
+  border: 1px solid rgba(0, 0, 0, 0.06);
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.98), rgba(246, 246, 246, 0.92));
+  box-shadow: var(--shadow);
+}
+
+.legal-info__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+  margin: 0;
+}
+
+.legal-info__item {
+  display: grid;
+  gap: 0.55rem;
+  min-width: 0;
+  padding: 1.2rem 1.25rem;
+  border-radius: 22px;
+  background: rgba(255, 255, 255, 0.98);
+  border: 1px solid rgba(0, 0, 0, 0.06);
+  box-shadow: 0 16px 30px rgba(0, 0, 0, 0.05);
+}
+
+.legal-info__item dt {
+  color: #111111;
+  font-size: 0.78rem;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.legal-info__item dd {
+  margin: 0;
+  color: var(--muted);
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: 1.65;
+  text-wrap: pretty;
+}
+
+.legal-info__item--company dd {
+  color: #111111;
+  font-size: 1.05rem;
+  font-weight: 800;
+}
+
+.legal-info__statement {
+  margin: 1.4rem 0 0;
+  padding-top: 1.4rem;
+  border-top: 1px solid rgba(0, 0, 0, 0.06);
+  color: var(--muted);
+  font-size: 1rem;
+  line-height: 1.8;
+  text-wrap: pretty;
 }
 
 .hero__actions {
@@ -903,9 +1043,24 @@ a {
   border-bottom: 1px solid rgba(0, 0, 0, 0.06);
 }
 
+.footer__brand {
+  display: grid;
+  gap: 0.45rem;
+  flex: 1 1 24rem;
+  max-width: 36rem;
+}
+
 .footer__content h3,
 .footer__content p {
   margin: 0;
+}
+
+.footer__brand-label {
+  color: #111111;
+  font-size: 0.76rem;
+  font-weight: 800;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
 }
 
 .footer__content h3 {
@@ -915,6 +1070,17 @@ a {
 .footer__content p,
 .footer__bottom {
   color: var(--muted);
+}
+
+.footer__brand .footer__brand-location {
+  color: #111111;
+  font-weight: 600;
+}
+
+.footer__institutional-summary {
+  max-width: 34rem;
+  line-height: 1.75;
+  text-wrap: pretty;
 }
 
 .footer__nav-group {
@@ -1042,9 +1208,23 @@ a {
 
 .footer__bottom {
   padding-top: 1rem;
+  flex-direction: column;
+  gap: 0.35rem;
   justify-content: center;
   text-align: center;
   font-size: 0.95rem;
+}
+
+.footer__bottom-operator {
+  max-width: 52rem;
+  color: #111111;
+  font-weight: 700;
+  line-height: 1.55;
+  text-wrap: pretty;
+}
+
+.footer__bottom-copy {
+  color: var(--muted);
 }
 
 .footer__love {
@@ -1954,6 +2134,10 @@ a {
     gap: 0.75rem;
   }
 
+  .brand__text {
+    max-width: min(100%, 24rem);
+  }
+
   .brand__logo {
     width: 44px;
     height: 44px;
@@ -1962,13 +2146,18 @@ a {
   }
 
   .brand h1 {
-    font-size: 1rem;
-    line-height: 1.1;
+    font-size: 1.04rem;
+    line-height: 1.08;
   }
 
   .brand p {
-    font-size: 0.82rem;
-    line-height: 1.25;
+    font-size: 0.78rem;
+    line-height: 1.34;
+  }
+
+  .institutional-bar__content {
+    font-size: 0.92rem;
+    padding: 0.8rem 0;
   }
 
   .hero {
@@ -1996,8 +2185,12 @@ a {
     align-items: center;
   }
 
-  .hero__text .badge {
+  .hero__institutional-eyebrow,
+  .hero__institutional-card,
+  .footer__brand,
+  .institutional-bar__content {
     margin-inline: auto;
+    text-align: center;
   }
 
   .hero__text h2 {
@@ -2170,6 +2363,11 @@ a {
     justify-items: center;
   }
 
+  .footer__brand {
+    max-width: 100%;
+    justify-items: center;
+  }
+
   .footer__links {
     width: 100%;
     justify-content: center;
@@ -2222,6 +2420,10 @@ a {
     align-items: center;
   }
 
+  .brand__text {
+    max-width: min(100%, 21rem);
+  }
+
   .brand__logo {
     width: 42px;
     height: 42px;
@@ -2229,11 +2431,22 @@ a {
   }
 
   .brand h1 {
-    font-size: 0.98rem;
+    font-size: 1rem;
   }
 
   .brand p {
-    font-size: 0.78rem;
+    font-size: 0.74rem;
+    line-height: 1.35;
+  }
+
+  .institutional-bar__content {
+    font-size: 0.9rem;
+    line-height: 1.6;
+  }
+
+  .legal-info__panel {
+    padding: 1.35rem;
+    border-radius: 22px;
   }
 
   .hero {
